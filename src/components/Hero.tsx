@@ -3,7 +3,7 @@ import { ArrowRight, Film, Clapperboard, Video, Sparkles, X, Play } from 'lucide
 import heroVisual from '../assets/images/hero_akin_visuals_1790434901719.jpg';
 
 export const FASHION_COMMERCIAL_VIDEO_URL =
-  'https://res.cloudinary.com/so8uohki/video/upload/v1790436999/cardigan_fashion.mp4';
+  'https://res.cloudinary.com/so8uohki/video/upload/v1790775346/fashion.mp4';
 
 interface HeroProps {
   onViewWorkClick: () => void;

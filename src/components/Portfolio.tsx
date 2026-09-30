@@ -13,6 +13,7 @@ import cyberImg from '../assets/images/portfolio_cyber_concept_1790433558485.jpg
 import watchImg from '../assets/images/luxury_watch_1790439304811.jpg';
 import audioImg from '../assets/images/portfolio_audio_product_1790433581856.jpg';
 import aquariaImg from '../assets/images/portfolio_perfume_ad_1790433547758.jpg';
+import botanicalImg from '../assets/images/portfolio_botanical_art_1790433592602.jpg';
 
 interface PortfolioProps {
   onSelectProject: (project: ProjectItem) => void;
@@ -30,7 +31,7 @@ interface LatestCreation {
   tools: string[];
 }
 
-const CARDIGAN_FASHION_VIDEO_URL = 'https://res.cloudinary.com/so8uohki/video/upload/v1790436999/cardigan_fashion.mp4';
+const CARDIGAN_FASHION_VIDEO_URL = 'https://res.cloudinary.com/so8uohki/video/upload/v1790775346/fashion.mp4';
 
 const LATEST_CREATIONS: LatestCreation[] = [
   {
@@ -38,6 +39,7 @@ const LATEST_CREATIONS: LatestCreation[] = [
     title: 'Luxury Perfume Commercial',
     duration: '0:30',
     image: perfumeImg,
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
     category: 'COMMERCIAL',
     client: 'Aura Luxe Fragrances',
     description: 'Cinematic luxury fragrance commercial featuring amber glass flacons, golden dusk backlight, and shattered glass reflections created with neural generative engines.',
@@ -48,6 +50,7 @@ const LATEST_CREATIONS: LatestCreation[] = [
     title: 'Cinematic Travel Video',
     duration: '0:45',
     image: travelImg,
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4',
     category: 'CINEMATIC',
     client: 'Alpine Expeditions',
     description: 'Photorealistic travel documentary vista of an adventurous hiker standing on an alpine mountain cliff over pristine fjord waters with dynamic drone tracking.',
@@ -58,6 +61,7 @@ const LATEST_CREATIONS: LatestCreation[] = [
     title: 'Tech Product Ad',
     duration: '0:28',
     image: techImg,
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4',
     category: 'PRODUCT ADS',
     client: 'Nova Acoustics',
     description: 'High-concept consumer tech commercial showcasing futuristic wireless headphones on a glowing geometric neon cyan pedestal with laser volumetric lighting.',
@@ -68,19 +72,21 @@ const LATEST_CREATIONS: LatestCreation[] = [
     title: 'Valoir Haute Couture',
     duration: '1:12',
     image: fashionImg,
+    videoUrl: 'https://res.cloudinary.com/so8uohki/video/upload/v1790425154/Creating_fashion_commercial_video_20260922112658.mp4',
     category: 'CINEMATIC',
     client: 'Maison Valoir Paris',
     description: 'Avant-garde luxury fashion film exploring sculptural liquid chrome garments that morph with choreography.',
     tools: ['Kling 1.5 Pro', 'Flux.1 Dev', 'Luma Dream Machine'],
   },
   {
-    id: 'aura-hyper-ev',
-    title: 'Aura Hyper EV Commercial',
-    duration: '0:48',
-    image: hyperEvImg,
+    id: 'luxury-body-wash-commercial',
+    title: 'Botanical Body Wash Ad',
+    duration: '0:35',
+    image: botanicalImg,
+    videoUrl: 'https://res.cloudinary.com/so8uohki/video/upload/v1790776491/body_wash.mp4',
     category: 'COMMERCIAL',
-    client: 'Aura Automobili',
-    description: 'High-octane commercial campaign film introducing a next-generation electric hypercar concept through volumetric rain and reflective asphalt.',
+    client: 'Aura Botanical Skincare',
+    description: 'Sensory luxury body wash commercial featuring liquid botanicals, soothing water droplets, and luminous skincare textures created with neural generative engines.',
     tools: ['Runway Gen-3 Alpha', 'Midjourney v6.1', 'DaVinci Resolve'],
   },
   {
@@ -88,6 +94,7 @@ const LATEST_CREATIONS: LatestCreation[] = [
     title: 'Cosmic Nebula Odyssey',
     duration: '1:20',
     image: cosmicImg,
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyBlazes.mp4',
     category: 'CINEMATIC',
     client: 'Stellar Studios',
     description: 'Cinematic sci-fi exploration sequence with an exploratory vessel gliding through vibrant violet and cyan stellar nebulae.',
@@ -98,6 +105,7 @@ const LATEST_CREATIONS: LatestCreation[] = [
     title: 'Neo-Sanctuary Concept',
     duration: '1:34',
     image: cyberImg,
+    videoUrl: 'https://res.cloudinary.com/so8uohki/video/upload/v1790774788/real_estate_1.mp4',
     category: 'CINEMATIC',
     client: 'Kaelen Architecture',
     description: 'Cinematic concept trailer for high-altitude carbon-fiber architectural sanctuaries designed for extreme climate resilience.',
@@ -108,6 +116,7 @@ const LATEST_CREATIONS: LatestCreation[] = [
     title: 'Luxury Titanium Chrono',
     duration: '0:35',
     image: watchImg,
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4',
     category: 'PRODUCT ADS',
     client: 'Chronos Genève',
     description: 'Floating titanium mechanical chronograph with exposed cyan gears and splashing crystal water droplets.',
@@ -118,6 +127,7 @@ const LATEST_CREATIONS: LatestCreation[] = [
     title: 'Soniq Sphere Levitation',
     duration: '0:42',
     image: audioImg,
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4',
     category: 'PRODUCT ADS',
     client: 'Soniq Audio Labs',
     description: 'Zero-gravity levitating acoustic sphere product launch video featuring precision resonance waveforms and tactile textures.',
@@ -128,6 +138,7 @@ const LATEST_CREATIONS: LatestCreation[] = [
     title: 'Aquaria Lumen Liquid Parfum',
     duration: '0:30',
     image: aquariaImg,
+    videoUrl: 'https://res.cloudinary.com/so8uohki/video/upload/v1790436999/cardigan_fashion.mp4',
     category: 'COMMERCIAL',
     client: 'Lumen Luxe Fragrances',
     description: 'Sensory underwater commercial of crystal fragrance flacons immersed in ethereal azure aquatic caustics with bioluminescent light particles.',
@@ -166,7 +177,7 @@ export const Portfolio: React.FC<PortfolioProps> = ({ onSelectProject }) => {
       thumbnail: item.image,
       mediaType: 'video',
       videoDuration: item.duration,
-      videoUrl: 'https://res.cloudinary.com/so8uohki/video/upload/v1790436999/cardigan_fashion.mp4',
+      videoUrl: item.videoUrl || CARDIGAN_FASHION_VIDEO_URL,
       aspectRatio: 'square',
       tools: item.tools,
       deliverables: ['4K Master Video', 'Social Cutdowns (9:16 / 1:1)', 'Key Art Posters'],

@@ -32,7 +32,7 @@ export const PORTFOLIO_PROJECTS: ProjectItem[] = [
     description: "Avant-garde luxury fashion film exploring sculptural liquid chrome garments that morph with choreography, debuted during Paris Digital Fashion Week.",
     creativeDirection: "Brutalist studio minimalism, fluid metallic cloth simulation prompts, sharp geometric silhouettes, subtle sky-blue refractive accents.",
     thumbnail: "/src/assets/images/portfolio_fashion_film_1790433536969.jpg",
-    videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+    videoUrl: "https://res.cloudinary.com/so8uohki/video/upload/v1790425154/Creating_fashion_commercial_video_20260922112658.mp4",
     mediaType: "video",
     videoDuration: "01:12",
     aspectRatio: "vertical",
