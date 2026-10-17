@@ -18,7 +18,7 @@ export const About: React.FC<AboutProps> = ({ onContactClick }) => {
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-white/10 group aspect-[3/4] max-w-md mx-auto lg:max-w-none">
               <img
-                src="https://res.cloudinary.com/so8uohki/image/upload/v1790454398/Replace_image_background_color_20260926212024.jpg"
+                src="https://res.cloudinary.com/so8uohki/image/upload/v1792210147/WhatsApp_Image_2026-10-14_at_5.54.55_AM.jpg"
                 alt="Skyverra Visuals AI Video Creator Portrait"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
